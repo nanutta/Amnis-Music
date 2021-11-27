@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>	
+        <title>New Music | Amnis Music</title>
+        <!--META TAGS-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Noah Anutta">
+        <meta name="copyright" content="Noah Anutta">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="robots" content="index,follow">
+        <!--LINKS-->
+        <link href="amnisStyles.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+        <link href="jquery-ui.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+        <script src="amnisBrowseScript.js"></script>
+        <link rel="shortcut icon" href="images//amnisIcon.ico">
+    </head>
+    <body>
+        <header>
+            <a href="home.html">
+                <img src="images/AMNISMUSIC@0.5x.png" alt="Amnis Music Logo. An A with a stream visible in the circle space of the A character">
+            </a>
+            <h1><a href="home.html">Amnis Music</a></h1>
+            <nav>
+                <h2 class="sr-only">Main Navigation</h2>
+                <ul>
+                    <li><a href="newMusic.html">New Music</a></li>
+                    <li id="active"><a href="browse.html">Browse</a></li>
+                    <li><a href="home.html">About Us</a></li>
+                </ul>
+            </nav>
+        </header>        
+        <main id="main">
+            <section id="browseMenu">
+                <ul>
+                    <li><a href="#tabs-1">Our Picks</a></li>
+                    <li><a href="#tabs-2">Artists</a></li>
+                    <li><a href="#tabs-3">Albums</a></li>
+                    <li><a href="#tabs-4">Genres</a></li>
+                </ul>
+                <div id="tabs-1">
+                    <!-- Have a little paragraph element talking about this month and what songs are the most exciting -->
+                    <p>This month we finally have begun to roll-out Amnis Music! We are really grateful for the artists that have chosen to work with us and support the site by submitting music to us. We hope you can take the time to listen to each artist and show your support!</p>
+                    <section class="ourPick">
+                        <a href="#"><img src="images/albumArt.png" alt="Album Artwork" class="cover"></a>
+                        <h3>Project Name</h3>
+                        <img src="images/artistProfile.png" alt="Artist Picture" class="profile">
+                        <h3>Artist Name</h3>
+                        <p>We really enjoy the single &quot;Need&quot; off this project!</p>
+                    </section>
+                    <section class="ourPick">
+                        <a href="#"><img src="images/albumArt.png" alt="Album Artwork" class="cover"></a>
+                        <h3>Project Name</h3>
+                        <img src="images/artistProfile.png" alt="Artist Picture" class="profile">
+                        <h3>Artist Name</h3>
+                        <p>&quot;State Line&quot; is a fantastic single from Lenah's discography!</p>
+                    </section>
+                    <section class="ourPick">
+                        <a href="#"><img src="images/albumArt.png" alt="Album Artwork" class="cover"></a>
+                        <h3>Project Name</h3>
+                        <img src="images/artistProfile.png" alt="Artist Picture" class="profile">
+                        <h3>Artist Name</h3>
+                        <p>Noah's favorite song is &quot;Fall Asleep&quot; from this project!</p>
+                    </section>
+                    <section class="ourPick">
+                        <a href="#"><img src="images/albumArt.png" alt="Album Artwork" class="cover"></a>
+                        <h3>Project Name</h3>
+                        <img src="images/artistProfile.png" alt="Artist Picture" class="profile">
+                        <h3>Artist Name</h3>
+                        <p>Really great r&b and hip-hop elements from this song with a lush instrumental.</p>
+                    </section>
+                    <section class="ourPick">
+                        <a href="#"><img src="images/albumArt.png" alt="Album Artwork" class="cover"></a>
+                        <h3>Project Name</h3>
+                        <img src="images/artistProfile.png" alt="Artist Picture" class="profile">
+                        <h3>Artist Name</h3>
+                        <p>A hot instrumental + witty bars = perfection!</p>
+                    </section>
+                </div>
+                <div id="tabs-2">
+                    <!-- Have a similar layout to New Music page with all 5 artists -->
+                    <section id="tabArtists">
+                        <section class="featuredProfile">
+                            <h3>Artist Name</h3>
+                            <a href="#"><img src="images/artistProfile.png" alt="Artist Picture" class="profile"></a>
+                            <p>Artist Biography</p>
+                        </section>
+                        <section class="featuredProfile">
+                            <h3>Artist Name</h3>
+                            <a href="#"><img src="images/artistProfile.png" alt="Artist Picture" class="profile"></a>
+                            <p>Artist Biography</p>
+                        </section>
+                        <section class="featuredProfile">
+                            <h3>Artist Name</h3>
+                            <a href="#"><img src="images/artistProfile.png" alt="Artist Picture" class="profile"></a>
+                            <p>Artist Biography</p>
+                        </section>
+                        <section class="featuredProfile">
+                            <h3>Artist Name</h3>
+                            <a href="#"><img src="images/artistProfile.png" alt="Artist Picture" class="profile"></a>
+                            <p>Artist Biography</p>
+                        </section>
+                        <section class="featuredProfile">
+                            <h3>Artist Name</h3>
+                            <a href="#"><img src="images/artistProfile.png" alt="Artist Picture" class="profile"></a>
+                            <p>Artist Biography</p>
+                        </section>
+                    </section>
+                </div>
+                <div id="tabs-3">
+                    <!-- Just show the three Albums or Just NOAH -->
+                    <section id="onlyAlbum">
+                        <a href="#"><img src="images/albumArt.png" alt="Album Artwork" class="cover"></a>
+                        <img src="images/artistProfile.png" alt="Artist Picture" class="profile">
+                        <h3>Project Name</h3>
+                        <h3>Artist Name</h3>
+                        <p>As of right now, the only full length album on Amnis Music is &quot;NOAH&quot;! Reach out using the form on our home page to submit your album, EP, or single!</p>
+                    </section>
+                </div>
+                <div id="tabs-4">
+                    <!-- Have an accordion within the tabs to open genres and display each category with some projects. -->
+                    <div id="accordion">
+                        <h3>Singer/Songwriter</h3>
+                        <div>
+                            <section class="genreDisp">
+                                <section class="featuredMusic">
+                                    <a href="#"><img src="images/albumArt.png" alt="Album Artwork" class="cover"></a>
+                                    <h3>Project Name</h3>
+                                    <p>Project Description</p>
+                                    <img src="images/artistProfile.png" alt="Artist Picture" class="profile">
+                                    <h3>Artist Name</h3>
+                                    <p>Artist Biography</p>
+                                </section>
+                                <section class="featuredMusic">
+                                    <a href="#"><img src="images/albumArt.png" alt="Album Artwork" class="cover"></a>
+                                    <h3>Project Name</h3>
+                                    <p>Project Description</p>
+                                    <img src="images/artistProfile.png" alt="Artist Picture" class="profile">
+                                    <h3>Artist Name</h3>
+                                    <p>Artist Biography</p>
+                                </section>
+                            </section>
+                        </div>
+                        <h3>Pop</h3>
+                        <div>
+                            <section class="genreDisp">
+                                <section class="featuredMusic">
+                                    <a href="#"><img src="images/albumArt.png" alt="Album Artwork" class="cover"></a>
+                                    <h3>Project Name</h3>
+                                    <p>Project Description</p>
+                                    <img src="images/artistProfile.png" alt="Artist Picture" class="profile">
+                                    <h3>Artist Name</h3>
+                                    <p>Artist Biography</p>
+                                </section>
+                                <section class="featuredMusic">
+                                    <a href="#"><img src="images/albumArt.png" alt="Album Artwork" class="cover"></a>
+                                    <h3>Project Name</h3>
+                                    <p>Project Description</p>
+                                    <img src="images/artistProfile.png" alt="Artist Picture" class="profile">
+                                    <h3>Artist Name</h3>
+                                    <p>Artist Biography</p>
+                                </section>
+                            </section>
+                        </div>
+                        <h3>Hip-Hop/Rap</h3>
+                        <div>
+                            <section class="genreDisp">
+                                <section class="featuredMusic">
+                                    <a href="#"><img src="images/albumArt.png" alt="Album Artwork" class="cover"></a>
+                                    <h3>Project Name</h3>
+                                    <p>Project Description</p>
+                                    <img src="images/artistProfile.png" alt="Artist Picture" class="profile">
+                                    <h3>Artist Name</h3>
+                                    <p>Artist Biography</p>
+                                </section>
+                                <section class="featuredMusic">
+                                    <a href="#"><img src="images/albumArt.png" alt="Album Artwork" class="cover"></a>
+                                    <h3>Project Name</h3>
+                                    <p>Project Description</p>
+                                    <img src="images/artistProfile.png" alt="Artist Picture" class="profile">
+                                    <h3>Artist Name</h3>
+                                    <p>Artist Biography</p>
+                                </section>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="featured">
+                <h2><a href="newMusic.html">Featured New Music</a></h2>
+                <!--Four Featured Artists-->
+                <section class="featuredMusic">
+                    <a href="#"><img src="images/albumArt.png" alt="Album Artwork" class="cover"></a>
+                    <h3>Project Name</h3>
+                    <p>Project Description</p>
+                    <img src="images/artistProfile.png" alt="Artist Picture" class="profile">
+                    <h3>Artist Name</h3>
+                    <p>Artist Biography</p>
+                </section>
+                <section class="featuredMusic">
+                    <a href="#"><img src="images/albumArt.png" alt="Album Artwork" class="cover"></a>
+                    <h3>Project Name</h3>
+                    <p>Project Description</p>
+                    <img src="images/artistProfile.png" alt="Artist Picture" class="profile">
+                    <h3>Artist Name</h3>
+                    <p>Artist Biography</p>
+                </section>
+                <section class="featuredMusic">
+                    <a href="#"><img src="images/albumArt.png" alt="Album Artwork" class="cover"></a>
+                    <h3>Project Name</h3>
+                    <p>Project Description</p>
+                    <img src="images/artistProfile.png" alt="Artist Picture" class="profile">
+                    <h3>Artist Name</h3>
+                    <p>Artist Biography</p>
+                </section>
+                <section class="featuredMusic">
+                    <a href="#"><img src="images/albumArt.png" alt="Album Artwork" class="cover"></a>
+                    <h3>Project Name</h3>
+                    <p>Project Description</p>
+                    <img src="images/artistProfile.png" alt="Artist Picture" class="profile">
+                    <h3>Artist Name</h3>
+                    <p>Artist Biography</p>
+                </section>
+            </section>  
+        </main>
+        <footer>
+            <!--Split into three sections, grid layout in CSS for Socials, copyright, and educational purposes info-->
+            <ul>
+                <li><a href="#"><img src="images/insta.svg" alt="Instagram Logo"></a></li>
+                <li><a href="#"><img src="images/twit.svg" alt="Twitter Logo"></a></li>
+                <li><a href="#"><img src="images/gith.svg" alt="GitHub Logo"></a></li>
+            </ul>
+            <small>Copyright Amnis Music &copy; 2021</small>
+            <small>For Educational Purposes Only</small>
+        </footer>
+    </body>
+</html>

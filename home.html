@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>	
+        <title>Amnis Music</title>
+        <!--META TAGS-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Noah Anutta">
+        <meta name="copyright" content="Noah Anutta">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="robots" content="index,follow">
+        <!--LINKS-->
+        <link href="amnisStyles.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+        <script src="amnisHomeScript.js"></script>
+        <link rel="shortcut icon" href="images//amnisIcon.ico">
+    </head>
+    <body>
+        <header>
+            <a href="home.html">
+                <img src="images/AMNISMUSIC@0.5x.png" alt="Amnis Music Logo. An A with a stream visible in the circle space of the A character">
+            </a>
+            <h1><a href="home.html">Amnis Music</a></h1>
+            <nav>
+                <h2 class="sr-only">Main Navigation</h2>
+                <ul>
+                    <li><a href="newMusic.html">New Music</a></li>
+                    <li><a href="browse.html">Browse</a></li>
+                    <li id="active"><a href="home.html">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!--ABOUT AMNIS MUSIC-->
+            <section id="about">
+                <h2>What is Amnis Music?</h2>
+                <img src="images/aboutOne.png" alt="Company Photo">
+                <p>&emsp;&emsp;In a time where streams are worth fractions of a cent, our goal is to allow independent musicians to publish their discography on this platform and make a liveable wage. Amnis Music is the passion project of Noah Anutta, both an artist and full-stack developer. While Amnis, latin for ‘stream’, is still in the early stages of development, the concept of the project remains strong and Noah is committed to developing the project as much as possible over the next few years. By combining the community aspects of platforms like Bandcamp or SoundCloud and the creator monetization system of platforms like Patreon or Twitch, we hope to provide independent musicians the platform to make a decent earning from their supporters!</p>
+                <br>
+                <p>&emsp;&emsp;Ideally, Amnis Music will be a platform that allows artists to make additions to their discography in real-time and post to their community about upcoming projects, performances, and more. On the supporter side, users will be able to “subscribe” to their favorite musicians for full access to the discography.</p>
+                <h2>How We Curate Our Library</h2>
+                <img src="images/aboutTwo.png" alt="Meeting Musicians">
+                <p>&emsp;&emsp;In the early stages of development, we are only accepting a limited number of submissions, as well as sending out invites to some of our favorite artists. In the future, we’d like to allow artists to register for the platform, and begin uploading their discography to their own landing page. Down the road we look forward to creating the “live discography” where artists can post and update demos or projects as they see fit, allowing for community feedback and support. We want to see our artists succeed, and we feel like this could be a great opportunity for community interaction if the artist chooses to use the feature.</p>
+            </section>
+            <!--FEATURED NEW MUSIC-->
+            <section class="featured">
+                <!--Four Featured Artists-->
+                <h2><a href="newMusic.html">New Music</a></h2>
+                <section class="featuredMusic">
+                    <a href="#"><img src="images/albumArt.png" alt="Album Artwork" class="cover"></a>
+                    <h3>Project Name</h3>
+                    <p>Project Description</p>
+                    <img src="images/artistProfile.png" alt="Artist Picture" class="profile">
+                    <h3>Artist Name</h3>
+                    <p>Artist Biography</p>
+                </section>
+                <section class="featuredMusic">
+                    <a href="#"><img src="images/albumArt.png" alt="Album Artwork" class="cover"></a>
+                    <h3>Project Name</h3>
+                    <p>Project Description</p>
+                    <img src="images/artistProfile.png" alt="Artist Picture" class="profile">
+                    <h3>Artist Name</h3>
+                    <p>Artist Biography</p>
+                </section>
+                <section class="featuredMusic">
+                    <a href="#"><img src="images/albumArt.png" alt="Album Artwork" class="cover"></a>
+                    <h3>Project Name</h3>
+                    <p>Project Description</p>
+                    <img src="images/artistProfile.png" alt="Artist Picture" class="profile">
+                    <h3>Artist Name</h3>
+                    <p>Artist Biography</p>
+                </section>
+                <section class="featuredMusic">
+                    <a href="#"><img src="images/albumArt.png" alt="Album Artwork" class="cover"></a>
+                    <h3>Project Name</h3>
+                    <p>Project Description</p>
+                    <img src="images/artistProfile.png" alt="Artist Picture" class="profile">
+                    <h3>Artist Name</h3>
+                    <p>Artist Biography</p>
+                </section>
+            </section>
+            <!--Contact Us-->
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>If you have any questions regarding Amnis Music's development, service, or would like to submit music, please reach out using this contact form!</p>
+                <form action="fake.php">
+                    <label for="fname">Full Name:</label>
+                    <input type="text" id="fname" name="fullName" placeholder="Your Full Name">
+                    <label for="topic">Topic:</label>
+                    <select id="topic" name="topic">
+                        <option value="Development">Development</option>
+                        <option value="Service">Service</option>
+                        <option value="Submission">Submission</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Please write your message here"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+
+        </main>
+        <footer>
+            <!--Split into three sections, grid layout in CSS for Socials, copyright, and educational purposes info-->
+            <ul>
+                <li><a href="#"><img src="images/insta.svg" alt="Instagram Logo"></a></li>
+                <li><a href="#"><img src="images/twit.svg" alt="Twitter Logo"></a></li>
+                <li><a href="#"><img src="images/gith.svg" alt="GitHub Logo"></a></li>
+            </ul>
+            <small>Copyright Amnis Music &copy; 2021</small>
+            <small>For Educational Purposes Only</small>
+        </footer>
+    </body>
+</html>
