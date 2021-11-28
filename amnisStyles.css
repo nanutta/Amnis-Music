@@ -98,6 +98,7 @@ img{
 p{
     font-weight: 400;
     font-style: normal;
+    line-height: 1.5;
 }
 h1{
     font-family: interstate-condensed, sans-serif;
@@ -190,11 +191,11 @@ main{
 .featuredMusic a img{
     display: block;
     margin: 0 auto;
-    filter: contrast(100%) blur(0px) saturate(100%) drop-shadow(0px 0px 0px var(--main-black-color));
+    filter: contrast(100%) saturate(100%) drop-shadow(0px 0px 0px var(--main-black-color));
     transition: filter 250ms;
 }
 .featuredMusic a img:hover{
-    filter: contrast(125%) blur(1px) saturate(50%) drop-shadow(0px 0px 5px var(--main-blue-color));
+    filter: contrast(125%) saturate(50%) drop-shadow(0px 0px 5px var(--main-blue-color));
 }
 .cover{
     width: 80%;
@@ -337,11 +338,11 @@ footer li img{
     display: block;
     margin: 0 auto;
     width: 100%;
-    filter: contrast(100%) blur(0px) saturate(100%) drop-shadow(0px 0px 0px var(--main-black-color));
+    filter: contrast(100%) saturate(100%) drop-shadow(0px 0px 0px var(--main-black-color));
     transition: filter 250ms;
 }
 .featuredProfile img:hover{
-    filter: contrast(125%) blur(1px) saturate(50%) drop-shadow(0px 0px 5px var(--main-blue-color));
+    filter: contrast(125%) saturate(50%) drop-shadow(0px 0px 5px var(--main-blue-color));
 }
 
 #topPicks{
@@ -368,11 +369,11 @@ footer li img{
 .topPick img{
     display: block;
     margin: 0 auto;
-    filter: contrast(100%) blur(0px) saturate(100%) drop-shadow(0px 0px 0px var(--main-black-color));
+    filter: contrast(100%) saturate(100%) drop-shadow(0px 0px 0px var(--main-black-color));
     transition: filter 250ms;
 }
 .topPick img:hover{
-    filter: contrast(125%) blur(1px) saturate(50%) drop-shadow(0px 0px 5px var(--main-blue-color));
+    filter: contrast(125%) saturate(50%) drop-shadow(0px 0px 5px var(--main-blue-color));
 }
 
 .projDisplay{
@@ -428,11 +429,11 @@ audio{
 .ourPick a{
     display: block;
     margin: 0 auto;
-    filter: contrast(100%) blur(0px) saturate(100%) drop-shadow(0px 0px 0px var(--main-black-color));
+    filter: contrast(100%) saturate(100%) drop-shadow(0px 0px 0px var(--main-black-color));
     transition: filter 250ms;
 }
 .ourPick a:hover{
-    filter: contrast(125%) blur(1px) saturate(50%) drop-shadow(0px 0px 5px var(--main-blue-color));
+    filter: contrast(125%) saturate(50%) drop-shadow(0px 0px 5px var(--main-blue-color));
 }
 
 #tabArtists{
@@ -460,11 +461,11 @@ audio{
 #onlyAlbum a{
     display: block;
     margin: 0 auto;
-    filter: contrast(100%) blur(0px) saturate(100%) drop-shadow(0px 0px 0px var(--main-black-color));
+    filter: contrast(100%) saturate(100%) drop-shadow(0px 0px 0px var(--main-black-color));
     transition: filter 250ms;
 }
 #onlyAlbum a:hover{
-    filter: contrast(125%) blur(1px) saturate(50%) drop-shadow(0px 0px 5px var(--main-blue-color));
+    filter: contrast(125%) saturate(50%) drop-shadow(0px 0px 5px var(--main-blue-color));
 }
 #onlyAlbum h3{
     text-align: center;
