@@ -1,15 +1,47 @@
 "use strict";
 // Javascript written by Noah Anutta
-//prevent submit
+
+//prevent submit + store and call data in local storage!
+
+//This function creates an item in local storage using a key and value pair.
+function createItem(key, value){
+    localStorage.setItem(key, value);
+}
+
+//This function calls to local to storage and pulls data to auto-populate the user's name if they've used the site contact before
+function pullItem(key){
+    return localStorage.getItem(key)
+}
+
 $(document).ready(function() {
+    let storedName = pullItem("Name");
+    $("#fname").val(storedName);
     $("form").submit(function(e){
-        alert('submit intercepted');
+        //First we prevent the default so the site doesn't redirect to an error page.
         e.preventDefault(e);
+        // Now the data from the form is stored into local storage.
+        //Full Name
+        let name = $("#fname").val();
+        console.log(name);
+        createItem("Name", name);
+        //Topic of Interest
+        let topic = $("#topic option:checked").val();
+        console.log(topic);
+        createItem("Topic", topic);
+        //Message
+        let message = $("#message").val();
+        console.log(message);
+        createItem("Message", message);
+
+        alert('submit intercepted and data saved to local storage :)');
         $("form")[0].reset();
     });
 });
 
+// Photo Slideshow/ updating on timer is done in the HTML Document
+
 // Reading JSON data about library from Postman and putting data into the page as wanted.
+
 $.ajax({
     type: "GET",
     url: "https://993e544b-52bb-4771-ad0a-3f48c38ad225.mock.pstmn.io/project",

@@ -14,6 +14,17 @@
         <link href="amnisStyles.css" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
         <script src="amnisHomeScript.js"></script>
+        <script src="https://malsup.github.io/jquery.cycle2.js">
+            // This code operates the transitioning images!
+            let $slideshow1 = $(".cycle-slideshow");
+
+            $slideshow.click(function() {
+            if ($slideshow.is(".cycle-paused"))
+                $slideshow.cycle("resume");                
+            else
+                $slideshow.cycle("pause");
+            });
+        </script>
         <link rel="shortcut icon" href="images//amnisIcon.ico">
     </head>
     <body>
@@ -35,12 +46,26 @@
             <!--ABOUT AMNIS MUSIC-->
             <section id="about">
                 <h2>What is Amnis Music?</h2>
-                <img src="images/aboutOne.png" alt="Company Photo">
+                <div class="cycle-slideshow"
+                data-cycle-fx="fadeout"
+                data-cycle-speed="3000"
+                data-cycle-timeout="2000">
+                    <img src="images/aboutSlide1.png" alt="Photo of instruments and recording equipment.">
+                    <img src="images/aboutSlide2.png" alt="Image of audio playback equipment with text reading, Amnis Music. Creating a direct line to your favorite musicians.">
+                    <img src="images/aboutSlide3.png" alt="Image of microphone and keyboard with text reading: Thanks for choosing Amnis Music to support independent artists!">
+                </div>
                 <p>&emsp;&emsp;In a time where streams are worth fractions of a cent, our goal is to allow independent musicians to publish their discography on this platform and make a liveable wage. Amnis Music is the passion project of Noah Anutta, both an artist and full-stack developer. While Amnis, latin for ‘stream’, is still in the early stages of development, the concept of the project remains strong and Noah is committed to developing the project as much as possible over the next few years. By combining the community aspects of platforms like Bandcamp or SoundCloud and the creator monetization system of platforms like Patreon or Twitch, we hope to provide independent musicians the platform to make a decent earning from their supporters!</p>
                 <br>
                 <p>&emsp;&emsp;Ideally, Amnis Music will be a platform that allows artists to make additions to their discography in real-time and post to their community about upcoming projects, performances, and more. On the supporter side, users will be able to “subscribe” to their favorite musicians for full access to the discography.</p>
                 <h2>How We Curate Our Library</h2>
-                <img src="images/aboutTwo.png" alt="Meeting Musicians">
+                <div class="cycle-slideshow"
+                data-cycle-fx="fadeout"
+                data-cycle-speed="4000"
+                data-cycle-timeout="3000">
+                    <img src="images/curateSlide1.png" alt="Photo of friends dancing.">
+                    <img src="images/curateSlide2.png" alt="Graphic of two people with text that reads: We want to hear your music! Reach out to submit below!">
+                    <img src="images/curateSlide3.png" alt="Image of two people dancing with the logo overtop and text reading: find your next favorite artist here.">
+                </div>
                 <p>&emsp;&emsp;In the early stages of development, we are only accepting a limited number of submissions, as well as sending out invites to some of our favorite artists. In the future, we’d like to allow artists to register for the platform, and begin uploading their discography to their own landing page. Down the road we look forward to creating the “live discography” where artists can post and update demos or projects as they see fit, allowing for community feedback and support. We want to see our artists succeed, and we feel like this could be a great opportunity for community interaction if the artist chooses to use the feature.</p>
             </section>
             <!--FEATURED NEW MUSIC-->
